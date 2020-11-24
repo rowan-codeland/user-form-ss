@@ -1,14 +1,11 @@
 .scroll-container {
     overflow: scroll;
-    height: 100vh;
+    height: 90vh;
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
-    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-points-y: repeat(90vh);
 }
 
-/* .btn-group-toggle {
-    padding: 0;
-} */
 
 #padding-gone{
     padding:0;
@@ -19,7 +16,7 @@
 }
 
 .field {
-    height: 100vh;
+    height: 90vh;
     scroll-snap-align: center;    
 }
 
@@ -29,10 +26,10 @@
 
 .footer {
    position: fixed;
-   left: 0;
-   bottom: 0;
+   bottom:0px;
+   height: 10vh;
    width: 100%;
-   background-color: red;
+   background-color:black;
    color: white;
    text-align: center;
 }
