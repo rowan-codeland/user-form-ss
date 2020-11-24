@@ -6,6 +6,14 @@
     scroll-snap-points-y: repeat(100vh);
 }
 
+/* .btn-group-toggle {
+    padding: 0;
+} */
+
+#padding-gone{
+    padding:0;
+}
+
 .email {
     max-width: 670px;
 }
