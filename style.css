@@ -18,8 +18,23 @@
   padding: 0;
 }
 
-.email {
-  max-width: 670px;
+
+input:invalid {
+border: 1px solid #ce1a1a    
+-webkit-box-shadow: 0px 0px 4px #ce1a1a;
+-moz-box-shadow: 0px 0px 4px #ce1a1a;
+box-shadow: 0px 0px 4px #ce1a1a; 
+    /* -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; */
+}
+
+input:valid {
+border: 1px solid #42a3b8;
+-webkit-box-shadow: 0px 0px 4px #42a3b8;
+-moz-box-shadow: 0px 0px 4px #42a3b8;
+box-shadow: 0px 0px 4px #42a3b8; 
 }
 
 .field {

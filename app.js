@@ -96,3 +96,4 @@ footer4.addEventListener("click", function () {
 footer5.addEventListener("click", function () {
   scroll_to_five.scrollIntoView({ behavior: "smooth" });
 });
+
