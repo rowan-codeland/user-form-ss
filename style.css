@@ -1,35 +1,62 @@
 .scroll-container {
-    overflow: scroll;
-    height: 90vh;
-    scroll-snap-type: mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-snap-points-y: repeat(90vh);
+  overflow: scroll;
+  height: 90vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(90vh);
 }
 
+.answered {
+  color: #42a3b8;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
 
-#padding-gone{
-    padding:0;
+#padding-gone {
+  padding: 0;
 }
 
 .email {
-    max-width: 670px;
+  max-width: 670px;
 }
 
 .field {
-    height: 90vh;
-    scroll-snap-align: center;    
+  height: 90vh;
+  scroll-snap-align: center;
 }
 
 .btn {
-    max-width: 115px;
+  max-width: 115px;
 }
 
 .footer {
-   position: fixed;
-   bottom:0px;
-   height: 10vh;
-   width: 100%;
-   background-color:black;
-   color: white;
-   text-align: center;
+  bottom: 0px;
+  height: 10vh;
+  line-height: 10vh;
+  vertical-align: middle;
+  color: grey;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.selected {
+  color: #42a3b8;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.selected:hover {
+    text-decoration: none;
+    color: #265f6b;
+    cursor: pointer;
+}
+
+.footer > a {
+      cursor: pointer;
 }

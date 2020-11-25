@@ -1,104 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>User First Form</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-	<link rel="stylesheet" href="style.css" />
-	<title>User First Form</title>
-</head>
-
-<body>
-	<div class="scroll-container">
-		<div class="field container-fluid row mx-auto my-auto align-center">
-			<a id="question-1" href="#"></a>
-			<div class="col-12 my-auto mx-auto align-center">
-				<h2>Do you like Pina Coladas?</h2>
-				<div class="col pl-0">
-					<div class="btn-group btn-group-toggle col pl-0" data-toggle="buttons">
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-A" autocomplete="off"> Yes
-                        </label>
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-B" autocomplete="off"> No
-                        </label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="field container-fluid row mx-auto my-auto align-center">
-			<a id="question-2" href="#"></a>
-			<div class="col-12 my-auto mx-auto align-center">
-				<h2>And getting caught in the rain?</h2>
-				<div class="col pl-0">
-					<div class="btn-group btn-group-toggle col pl-0" data-toggle="buttons">
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-C" autocomplete="off"> Yes
-                        </label>
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-D" autocomplete="off"> No
-                        </label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="field container-fluid row mx-auto my-auto align-center">
-			<a id="question-3" href="#"></a>
-			<div class="col-12 my-auto mx-auto align-center">
-				<h2>Are you into yoga?</h2>
-				<div class="col pl-0">
-					<div class="btn-group btn-group-toggle col pl-0" data-toggle="buttons">
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-E" autocomplete="off"> Yes
-                        </label>
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-F" autocomplete="off"> No
-                        </label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="field container-fluid row mx-auto my-auto align-center">
-			<a id="question-4" href="#"></a>
-			<div class="col-12 my-auto mx-auto align-center">
-				<h2>Do you have half a brain?</h2>
-				<div class="col pl-0">
-					<div class="btn-group btn-group-toggle col pl-0" data-toggle="buttons">
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-G" autocomplete="off"> Yes
-                        </label>
-						<label class="btn btn-outline-info col-4 mr-3">
-                            <input type="radio" name="options" id="button-H" autocomplete="off"> No
-                        </label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="field container-fluid row mx-auto my-auto align-center">
-			<a id="question-5" href="#"></a>
-			<div class="col-12 my-auto mx-auto align-center">
-				<h2>Email</h2>
-				<div class="col">
-					<div class="row">
-						<input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-						<button type="text" class="btn btn-outline-info col-4 mt-3 " id="button-I">Submit</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <div class="footer">
+  <body>
+    <div class="scroll-container">
+      <div class="field container-fluid row mx-auto my-auto align-center">
+        <a id="question-1" href="#"></a>
+        <div class="col-12 my-auto mx-auto align-center">
+          <h2 id="header1">Do you like Pina Coladas?</h2>
+          <div class="col pl-0">
+            <div
+              class="btn-group btn-group-toggle col pl-0"
+              data-toggle="buttons"
+            >
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-A"
+                  class="formButtons"
+                />
+                Yes
+              </label>
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-B"
+                  class="formButtons"
+                />
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field container-fluid row mx-auto my-auto align-center">
+        <a id="question-2" href="#"></a>
+        <div class="col-12 my-auto mx-auto align-center">
+          <h2 id="header2">And getting caught in the rain?</h2>
+          <div class="col pl-0">
+            <div
+              class="btn-group btn-group-toggle col pl-0"
+              data-toggle="buttons"
+            >
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-C"
+                  class="formButtons"
+                />
+                Yes
+              </label>
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-D"
+                  class="formButtons"
+                />
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field container-fluid row mx-auto my-auto align-center">
+        <a id="question-3" href="#"></a>
+        <div class="col-12 my-auto mx-auto align-center">
+          <h2 id="header3">Are you into yoga?</h2>
+          <div class="col pl-0">
+            <div
+              class="btn-group btn-group-toggle col pl-0"
+              data-toggle="buttons"
+            >
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-E"
+                  autocomplete="off"
+                  class="formButtons"
+                />
+                Yes
+              </label>
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-F"
+                  class="formButtons"
+                />
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field container-fluid row mx-auto my-auto align-center">
+        <a id="question-4" href="#"></a>
+        <div class="col-12 my-auto mx-auto align-center">
+          <h2 id="header4">Do you have half a brain?</h2>
+          <div class="col pl-0">
+            <div
+              class="btn-group btn-group-toggle col pl-0"
+              data-toggle="buttons"
+            >
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-G"
+                  class="formButtons"
+                />
+                Yes
+              </label>
+              <label class="btn btn-outline-info col-4 mr-3">
+                <input
+                  type="radio"
+                  name="options"
+                  id="button-H"
+                  class="formButtons"
+                />
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field container-fluid row mx-auto my-auto align-center">
+        <a id="question-5" href="#"></a>
+        <div class="col-12 my-auto mx-auto align-center">
+          <h2>Email</h2>
+          <div class="col">
+            <div class="row">
+              <input
+                type="email"
+                class="form-control"
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
+              />
+              <button
+                type="text"
+                class="btn btn-outline-info col-4 mt-3"
+                id="button-I"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer allign-middle">
+      <a id="footer1">Q.1</a>// <a id="footer2">Q.2</a>//
+      <a id="footer3">Q.3</a>// <a id="footer4">Q.4</a>//
+      <a id="footer5">Q.5</a>
     </div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-	</script>
-	<script src="app.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
